@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+header,
+footer {
+    flex: none;
+    line-height: 60px;
+    height: 60px;
+    color: white;
+    font-size: 2em;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: gold;
+}
+
+main {
+    background: wheat;
+    margin-top: 60px;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: row;
+}
+
+footer {
+    background: #2F2D2D;
+}
+
+.left,
+.right {
+    flex: 0 0 200px;
+    background: #A9A8A8;
+}
+
+.center {
+    flex: 1;
+}

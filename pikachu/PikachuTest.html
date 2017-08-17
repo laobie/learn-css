@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pikachu</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        *::before {
+            box-sizing: border-box;
+        }
+
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FFE600;
+        }
+
+
+        .eye {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: #333;
+            border: 2px solid black;
+            border-radius: 50%;
+            top: 65px;
+        }
+
+        .eye::before {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: white;
+            border-radius: 15px;
+            top: 2px;
+            position: absolute;
+            left: 6px;
+            border: 2px solid black;
+        }
+
+        .eye-left {
+            right: 50%;
+            margin-right: 90px;
+        }
+
+        .eye-right {
+            left: 50%;
+            margin-left: 90px;
+        }
+
+        #nose {
+            position: absolute;
+            left: 50%;
+            top: 200px;
+            margin-left: -30px;
+            border: 30px solid transparent;
+            z-index: 2;
+            border-radius: 50%;
+            border-top-color: black;
+        }
+    </style>
+</head>
+
+<body>
+</body>
+<div class="eye eye-left"></div>
+<div class="eye eye-right"></div>
+<div id="nose"></div>
+</html>
